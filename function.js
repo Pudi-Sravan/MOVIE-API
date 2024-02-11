@@ -27,15 +27,17 @@ async function showMovies(movies){
         const movieEl = document.createElement("div")
         movieEl.classList.add('movie')
         movieEl.innerHTML=
-        `<img src="${IMG_PATH+movie.poster_path}" alt="${movie.title}">
+        ` <div class="mov">
+        <img src="${IMG_PATH+movie.poster_path}" alt="${movie.title}">
+        <div class="overview">
+        <h3 class="title">Overview</h3>
+        <h2 class="title"><a href="${google_search+movie.title}" id="movielink">${movie.title}</a></h2>
+        <p>${movie.overview}</p>
+        </div>
+        </div>
         <div class="info">
             <h3 class="title">${movie.title}</h3>   
             <div class="rating"><span>${movie.vote_average}</span></div>
-        </div>
-        <div class="overview">
-            <h3 class="title">Overview</h3>
-            <h2 class="title"><a href="${google_search+movie.title}" id="movielink">${movie.title}</a></h2>
-            <p>${movie.overview}</p>
         </div>`
         main.appendChild(movieEl)
     })
@@ -96,16 +98,19 @@ async function showtv(tvshows){
         const tvEl = document.createElement("div");
         tvEl.classList.add('movie');
         tvEl.innerHTML = `
+        <div class="mov">
             <img src="${IMG_PATH}${tvS.poster_path}" alt="${tvS.name}">
-            <div class="info">
-                <h3 class="title">${tvS.name}</h3>   
-                <div class="rating"><span>${tvS.vote_average}</span></div>
-            </div>
             <div class="overview">
                 <h3 class="title">Overview</h3>
                 <h2 class="title"><a href="${google_search}${tvS.name}" id="movielink">${tvS.name}</a></h2>
                 <p>${tvS.overview}</p>
-            </div>`;
+            </div>
+        </div>
+            <div class="info">
+                <h3 class="title">${tvS.name}</h3>   
+                <div class="rating"><span>${tvS.vote_average}</span></div>
+            </div>
+            `;
         main.appendChild(tvEl);
     });
 }
@@ -239,3 +244,4 @@ function UrLupdatese(sepag, searchMovie){
     const UrL = `https://api.themoviedb.org/3/search/movie?api_key=35220158e40f259b13fe6b743e59de8e&page=${sepag}%22&query="`;
     getMovies(UrL + searchMovie);
 }
+
