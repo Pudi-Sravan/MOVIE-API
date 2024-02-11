@@ -281,7 +281,6 @@ header p{
     border-bottom: 3px solid rgb(42, 40, 40);
     padding-bottom: 2px;
     margin-right: 17px;
-
 }
 .opening{
     font-size: 15px;
@@ -309,18 +308,15 @@ header p{
     height: 40px;
     font-size: 20px;
 }    
-.prev,
-.next {
+.prev,.next {
     font-size: 20px;
     margin: 0 10px; 
     padding: 0 15px; 
 }
-
 .prev img {
     width: 20px;
     margin-right: 4px; 
 }
-
 .next img {
     width: 20px;
     margin-left: 4px; 
@@ -331,8 +327,7 @@ header p{
         background: linear-gradient(90deg, rgba(2, 0, 36, 0.6) 44%, rgba(238, 10, 59, 0.6) 78%, rgba(0, 213, 255, 0.6) 100%);
     }
     .checkbox{
-        display: block;
-        
+        display: block;      
     }
     .navbar{
       min-height: 35vh;
@@ -389,7 +384,6 @@ header p{
     width: 20px;
     margin-right: 3px; 
 }
-
 .next img {
     width: 20px;
     margin-left: 3px; 
@@ -427,15 +421,13 @@ header p{
         height: 34px;
         display: flex;
         align-items: center; 
-    }
-    
+    }  
     .pageno {
         margin: 10px 13px;
         list-style: none; 
         padding: 0; 
         display: flex; 
     }
-    
     .pageno li {
         margin: 0 4px;
         width: 25px;
@@ -444,28 +436,22 @@ header p{
         display: flex;
         align-items: center; 
         justify-content: center; 
-    }
-    
-    .prev,
-    .next {
+    } 
+    .prev, .next {
         font-size: 10px;
         margin: 0 4px;
         padding: 0 8px;
         display: flex;
         align-items: center; 
-    }
-    
+    } 
     .prev img {
         width: 14px;
         margin-right: 2px;
     }
-    
     .next img {
         width: 14px;
         margin-left: 2px;
     }
-    
-    
     .checkbox{
         margin-right: 10px;
     }
