@@ -63,9 +63,9 @@ header p{
     transition: padding 0.2s ease-in-out; 
 }
 .navbar p:hover {
+    box-shadow: 3px 2px rgba(0, 0, 0, 0.716);
     border-radius: 4px;
     background-color: rgba(1, 34, 37, 0.6);
-    box-shadow: 3px 2px rgba(0, 0, 0, 0.716);
     padding-bottom: 2.5px;
     margin-right:24px ;
 }
@@ -337,6 +337,21 @@ header p{
     header{
         background: linear-gradient(90deg, rgba(2, 0, 36, 0.6) 44%, rgba(238, 10, 59, 0.6) 78%, rgba(0, 213, 255, 0.6) 100%);
     }
+    .navbar p:hover {
+        font-size: 22px;
+        text-decoration: underline;
+        text-decoration-color: white;
+        padding: 4px;
+        padding-left: 6px;
+        padding-bottom: 6px;
+        padding-left: 7px;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 0%;
+        border: none;
+        box-shadow: none;
+    }
     .checkbox{
         display: block;
         
@@ -384,15 +399,18 @@ header p{
     height: 40px;
     font-size: 18px;
 }    
-.prev,.next {
+.prev,
+.next {
     font-size: 18px;
     margin: 0 8px; 
     padding: 0 14px; 
 }
+
 .prev img {
     width: 20px;
     margin-right: 3px; 
 }
+
 .next img {
     width: 20px;
     margin-left: 3px; 
@@ -402,6 +420,27 @@ header p{
     header{
         background: linear-gradient(90deg, rgba(2, 0, 36, 0.6) 48%, rgba(238, 10, 59, 0.6) 100%);
     }
+    .navbar p:hover {
+        font-size: 22px;
+        text-decoration: underline;
+        text-decoration-color: white;
+        padding: 4px;
+        padding-left: 6px;
+        padding-bottom: 6px;
+        padding-left: 7px;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 0%;
+        border: none;
+    }
+    .navbar{
+        min-height: 35vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.334);
+        color: #E50914;
+        position: absolute;
+      }
     .searchbar{
         width: 100%;
         max-width: 350px;
@@ -435,7 +474,7 @@ header p{
         list-style: none; 
         padding: 0; 
         display: flex; 
-    }
+    } 
     .pageno li {
         margin: 0 4px;
         width: 25px;
@@ -444,7 +483,7 @@ header p{
         display: flex;
         align-items: center; 
         justify-content: center; 
-    }
+    }  
     .prev,.next {
         font-size: 10px;
         margin: 0 4px;
@@ -455,11 +494,11 @@ header p{
     .prev img {
         width: 14px;
         margin-right: 2px;
-    }    
+    }
     .next img {
         width: 14px;
         margin-left: 2px;
-    }    
+    }
     .checkbox{
         margin-right: 10px;
     }
